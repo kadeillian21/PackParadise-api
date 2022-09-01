@@ -11,6 +11,17 @@ Content-Type: application/json
 {
   "name": "Big Tent",
   "price": "4000",
-  "image_url": "blah.com",
+  "image_url": "test.com/image.json",
   "description": "This is a new type of tent."
+}
+
+### Update Method
+PATCH http://localhost:3000/products/5.json
+Content-Type: application/json
+
+{
+  "name": "Even Better Hiking Poles",
+  "price": 200,
+  "image_url": "test.com/image_trekking.json",
+  "description": "These poles are even better than the KUIU poles!"
 }

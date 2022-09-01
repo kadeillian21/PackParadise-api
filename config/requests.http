@@ -25,3 +25,6 @@ Content-Type: application/json
   "image_url": "test.com/image_trekking.json",
   "description": "These poles are even better than the KUIU poles!"
 }
+
+### Destroy Method
+DELETE http://localhost:3000/products/10.json

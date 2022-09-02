@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   def index
-    products = Product.all
-    render json: products.as_json
+    @products = Product.all
+    render template: "products/index"
   end
 
   def show
@@ -10,25 +10,25 @@ class ProductsController < ApplicationController
   end
 
   def create
-    product = Product.create(
+    @product = Product.create(
       name: params["name"],
       price: params["price"],
       image_url: params["image_url"],
       description: params["description"],
     )
-    render json: product.as_json
+    render template: "products/show"
   end
 
   def update
-    product = Product.find_by(id: params["id"])
+    @product = Product.find_by(id: params["id"])
 
-    product.name = params["name"] || product.name
-    product.price = params["price"] || product.price
-    product.image_url = params["image_url"] || product.image_url
-    product.description = params["description"] || product.description
+    @product.name = params["name"] || @product.name
+    @product.price = params["price"] || @product.price
+    @product.image_url = params["image_url"] || @product.image_url
+    @product.description = params["description"] || @product.description
 
-    product.save
-    render json: product.as_json
+    @product.save
+    render template: "products/show"
   end
 
   def destroy

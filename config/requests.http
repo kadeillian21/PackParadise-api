@@ -1,10 +1,10 @@
-### Index Method
+### Index Method Product
 GET http://localhost:3000/products.json
 
-### Show Method
+### Show Method Product
 GET http://localhost:3000/products/2.json
 
-### Create Method
+### Create Method Product
 POST http://localhost:3000/products.json
 Content-Type: application/json
 
@@ -15,7 +15,7 @@ Content-Type: application/json
   "description": "This is a new type of tent."
 }
 
-### Update Method
+### Update Method Product
 PATCH http://localhost:3000/products/5.json
 Content-Type: application/json
 
@@ -26,5 +26,40 @@ Content-Type: application/json
   "description": "These poles are even better than the KUIU poles!"
 }
 
-### Destroy Method
+### Destroy Method Product
 DELETE http://localhost:3000/products/16.json
+
+
+
+
+
+
+
+### Index Method Supplier
+GET http://localhost:3000/suppliers.json
+
+### Show Method Supplier
+GET http://localhost:3000/suppliers/2.json
+
+### Create Method Supplier
+POST http://localhost:3000/suppliers.json
+Content-Type: application/json
+
+{
+  "name": "Nike",
+  "email": "nike@gmail.com",
+  "phone_number": "313-134-5132",
+}
+
+### Update Method Supplier
+PATCH http://localhost:3000/suppliers/4.json
+Content-Type: application/json
+
+{
+  "name": "Nike",
+  "email": "nike@gmail.com",
+  "phone_number": "313-134-5132",
+}
+
+### Destroy Method Supplier
+DELETE http://localhost:3000/suppliers/5.json

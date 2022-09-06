@@ -9,9 +9,9 @@ POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "Big Tent",
-  "price": "4000",
-  "image_url": "test.com/image.json",
+  "name": "water",
+  "price": "1",
+  "image_url": "test.com/image.png",
   "description": "This is a new type of tent."
 }
 
@@ -27,4 +27,4 @@ Content-Type: application/json
 }
 
 ### Destroy Method
-DELETE http://localhost:3000/products/10.json
+DELETE http://localhost:3000/products/16.json

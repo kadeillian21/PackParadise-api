@@ -9,8 +9,8 @@ POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "water",
-  "price": "1",
+  "name": "Even Better Hiking Poles",
+  "price": "23",
   "image_url": "test.com/image.png",
   "description": "This is a new type of tent."
 }

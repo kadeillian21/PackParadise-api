@@ -2,7 +2,7 @@
 GET http://localhost:3000/products.json
 
 ### Show Method Product
-GET http://localhost:3000/products/2.json
+GET http://localhost:3000/products/1.json
 
 ### Create Method Product
 POST http://localhost:3000/products.json

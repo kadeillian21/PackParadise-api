@@ -4,7 +4,7 @@
   updated_at: @product.updated_at,
   name: @product.name,
   price: @product.price,
-  image_url: @product.image_url,
+  images: @product.images,
   description: @product.description,
   is_discounted?: @product.is_discounted?,
   tax: @product.tax,

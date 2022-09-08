@@ -1,5 +1,6 @@
 ### Index Method Product
 GET http://localhost:3000/products.json
+Authentication: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NDA5NjZ9.OWY22aQwxgGbjT_SbtIcPf440pjemfa5HQJqrp1z4OE
 
 ### Show Method Product
 GET http://localhost:3000/products/1.json
@@ -11,7 +12,6 @@ Content-Type: application/json
 {
   "name": "Even Better Hiking Poles",
   "price": "23",
-  "image_url": "test.com/image.png",
   "description": "This is a new type of tent."
 }
 
@@ -22,12 +22,23 @@ Content-Type: application/json
 {
   "name": "Even Better Hiking Poles",
   "price": 200,
-  "image_url": "test.com/image_trekking.json",
-  "description": "These poles are even better than the KUIU poles!"
+  "description": "These poles are even better than the KUIU poles!",
+  "supplier": "Even Better"
 }
 
 ### Destroy Method Product
 DELETE http://localhost:3000/products/16.json
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
 
 
 
@@ -63,3 +74,17 @@ Content-Type: application/json
 
 ### Destroy Method Supplier
 DELETE http://localhost:3000/suppliers/5.json
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+
+### Order create
+POST http://localhost:3000/order.json
+

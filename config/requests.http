@@ -34,8 +34,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "test1",
+  "email": "test@test1.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -80,11 +80,28 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test@test1.com",
   "password": "password"
 }
 
+### Order index
+GET http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MjkyNzZ9.-Zw0VxKR_poH8bw2ApcueHSYbfcAWbJvXa-QtcR1q6s
+
+### Order show
+GET http://localhost:3000/orders/1.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MjkyNzZ9.-Zw0VxKR_poH8bw2ApcueHSYbfcAWbJvXa-QtcR1q6s
 
 ### Order create
-POST http://localhost:3000/order.json
+POST http://localhost:3000/orders.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MjkyNzZ9.-Zw0VxKR_poH8bw2ApcueHSYbfcAWbJvXa-QtcR1q6s
+
+{
+  "product_id": 2,
+  "quantity": 1
+}
+
+
+
 

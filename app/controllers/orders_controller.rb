@@ -1,12 +1,10 @@
 class OrdersController < ApplicationController
-  def index
-    if current_user
-      @orders = current_user.orders
+  before_action :authenticate_user
 
-      render template: "orders/index"
-    else
-      render json: { message: "You are not authorized to view this page." }, status: :unauthorized
-    end
+  def index
+    @orders = current_user.orders
+
+    render template: "orders/index"
   end
 
   def show

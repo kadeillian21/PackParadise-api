@@ -89,8 +89,8 @@ GET http://localhost:3000/orders.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MjkyNzZ9.-Zw0VxKR_poH8bw2ApcueHSYbfcAWbJvXa-QtcR1q6s
 
 ### Order show
-GET http://localhost:3000/orders/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MjkyNzZ9.-Zw0VxKR_poH8bw2ApcueHSYbfcAWbJvXa-QtcR1q6s
+GET http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MzI1MjF9.7vCY6ND4d4g1AmjfQqSrZAHuRkBxuu8kSDLKqUHIdQI
 
 ### Order create
 POST http://localhost:3000/orders.json

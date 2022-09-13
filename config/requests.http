@@ -1,7 +1,7 @@
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NjI4MzYxMDV9.TSn1Lt5HDZ3PIO4N8FWcWEWhxistTJOzApI_GlmLh3I
 
 ### Index Method Product
-GET http://localhost:3000/products.json
+GET http://localhost:3000/products.json?category=tents
 Authentication: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NDA5NjZ9.OWY22aQwxgGbjT_SbtIcPf440pjemfa5HQJqrp1z4OE
 
 ### Show Method Product

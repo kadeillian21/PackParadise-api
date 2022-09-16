@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NjI4MzYxMDV9.TSn1Lt5HDZ3PIO4N8FWcWEWhxistTJOzApI_GlmLh3I
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NjMxNzg5OTF9.QznxYogB8tfFxfHdUVd20nNd7bCPDMMiaGSSIJu5Xqc
 
 ### Index Method Product
 GET http://localhost:3000/products.json?category=tents
@@ -109,6 +109,24 @@ Authorization: Bearer {{jwt}}
   "quantity": 1
 }
 
+
+### Carted Products Index
+GET http://localhost:3000/cart.json
+
+
+### Carted Products Create
+POST http://localhost:3000/cart.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "user_id": 1,
+  "product_id": 1,
+  "quantity": 1
+}
+
+### Carted Products Destroy
+DELETE  http://localhost:3000/cart/2.json
 
 
 

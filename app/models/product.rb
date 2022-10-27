@@ -4,7 +4,6 @@ class Product < ApplicationRecord
   validates :description, length: { in: 10..500 }
   # validates_format_of :image_url, :with => %r{\.(png|jpb|jpeg)$}i, :message -> "Must have vaild image file type", :multiline => true
   belongs_to :supplier
-  has_many :images
   has_many :orders
   has_many :category_products
   has_many :carted_products
